@@ -1,9 +1,8 @@
-num = 100
+num = 5
 
-def fattoriale(num, sum) :
-    if num != 1 :
-        sum *= num
-        sum = fattoriale(num - 1, sum)
-    return sum
+sum = 1
         
-print(fattoriale(num, 1))
+for i in range(2, num + 1) :
+    sum *= i
+
+print(sum)
